@@ -7,7 +7,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # -----------------🎨 Page Settings -----------------
-st.set_page_config(page_title="Suicide Forecast Dashboard", layout="centered")
+st.set_page_config(page_title="Student Suicide Analysis Dashboard", layout="centered")
 
 st.markdown(
     """
@@ -39,8 +39,16 @@ st.markdown(
 )
 
 # -----------------📌 Title -----------------
-st.title("📊 Suicide Forecast Dashboard")
-st.markdown("Forecasting suicide trends using **ARIMA model** based on historical data (2001–2012).")
+st.markdown(
+    "<h1 style='text-align: center; color: #1f77b4;'>🎓 Student Suicide Analysis Dashboard</h1>",
+    unsafe_allow_html=True
+)
+st.markdown(
+    "<p style='text-align: center; font-size:18px; color: gray;'>"
+    "Forecasting suicide trends using <b>ARIMA model</b>"
+    "</p>",
+    unsafe_allow_html=True
+)
 
 # -----------------📂 Load Data -----------------
 @st.cache_data
